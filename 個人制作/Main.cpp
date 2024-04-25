@@ -9,7 +9,7 @@
 #include "SceneManager.h"
 
 
-extern Shadow g_shadow;
+//extern Shadow g_shadow;
 extern MikuObject g_Miku;
 extern EnemyObject g_Enemy;
 
@@ -86,7 +86,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		//ShadowMap_DrawSetup(g_ShadowMapHandles[(int)ShadowMapType::Stage]);
 
 		// シャドウマップへステージモデルの描画
-		MV1DrawModel(stage_handle);
+		//MV1DrawModel(stage_handle);
 
 		//// Stageのシャドウマップへの描画を終了
 		//ShadowMap_DrawEnd();

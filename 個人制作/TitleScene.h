@@ -31,8 +31,8 @@ private :
 	int bgHandle;
 };
 
-void InitTitleScene();		//タイトルシーンの初期化
-void RunTitleScene();		//タイトルシーンの（メイン処理の）実行
-void FinishTitleScene();	//タイトルシーンの終了
-
-void MainTitleScene();
+//void InitTitleScene();		//タイトルシーンの初期化
+//void RunTitleScene();		//タイトルシーンの（メイン処理の）実行
+//void FinishTitleScene();	//タイトルシーンの終了
+//
+//void MainTitleScene();

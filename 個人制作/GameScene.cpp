@@ -17,13 +17,16 @@ void GameScene::Draw()
 		return;
 	}
 
+	g_Miku.DrawMiku();
+	g_Enemy.Draw();
 	//DrawGraph(0, 0, bgHandle, true);
 }
 
 void GameScene::Init()
 {
 	bgHandle = LoadGraph("Res/Game.png");
-
+	g_Miku.InitializedMiku();
+	g_Enemy.InitAnimation();
 	CurrentStep = Step::UpDate;
 }
 
@@ -33,6 +36,9 @@ void GameScene::UpDate()
 	{
 		CurrentStep = Step::Finish;
 	}
+	g_Miku.UpdateMiku();
+	UpdateCamera();
+	g_Enemy.Update();
 }
 
 SceneBase::Type GameScene::Finish()
